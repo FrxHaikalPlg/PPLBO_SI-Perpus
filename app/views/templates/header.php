@@ -29,7 +29,7 @@
                 </ul>
                 <div class="d-flex">
                     <?php if(isset($_SESSION['user_logged_in']) && $_SESSION['user_logged_in']): ?>
-                        <a href="<?= BASEURL; ?>/AuthController/logout" class="btn btn-secondary">Logout</a>
+                        <a href="<?= BASEURL; ?>/AuthController/logout" class="btn btn-danger">Logout</a>
                     <?php else: ?>
                         <a href="<?= BASEURL; ?>/login" class="btn btn-outline-primary me-2">Login</a>
                         <a href="<?= BASEURL; ?>/register" class="btn btn-primary">Sign-up</a>

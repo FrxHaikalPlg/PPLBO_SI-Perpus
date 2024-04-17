@@ -14,6 +14,7 @@ class Controller {
         // Misalkan Anda menyimpan informasi login di session dengan key 'is_logged_in'
         if (!isset($_SESSION['user_logged_in'])) {
             header('Location: ' . BASEURL . '/login');
+            Flasher::setFlash('Silahkan','Login Dahulu!', '' ,'danger');
             exit;
         }
     }

@@ -28,7 +28,7 @@ class Register extends Controller {
             header('Location: '. BASEURL .'/register');
             exit;
         } else {
-            Flasher::setFlash('Registrasi','Gagal', '' ,'danger');
+            Flasher::setFlash('Registrasi','Gagal, JANGAN NAKAL!', '' ,'danger');
             header('Location: '. BASEURL .'/register');
             exit;
         }

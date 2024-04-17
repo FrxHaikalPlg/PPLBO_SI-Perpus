@@ -15,6 +15,11 @@ class Register_model {
         $email = $data['email'];
         $password = $data['password'];
         $password2 = $data['password2'];
+
+        //Cek Null
+        if ($nim == null || $email == null || $password == null || $password2 == null) {
+            return -1; // Input tidak boleh kosong
+        }
         
         // Cek jika email sudah terdaftar
         $this->db->query("SELECT email FROM " . $this->table . " WHERE email = :email");
@@ -33,7 +38,7 @@ class Register_model {
         }
 
         // Cek kecocokan password
-        if ($password !== $password2) {
+        if ($password2 == null || $password == null || $password !== $password2) {
             return -4; // Password tidak cocok
         }
 
