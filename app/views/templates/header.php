@@ -12,7 +12,7 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
     <?php if(!isset($data['cssMDB'])) : ?>
-    <nav class="navbar navbar-expand-lg navbar-light bg-info-subtle mb-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-0">
         <div class="container">
             <a class="navbar-brand" href="<?= BASEURL; ?>"><strong>Sistem Informasi Perpustakaan</strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +45,7 @@
     </nav>
     <?php endif; ?>
     <?php if(isset($data['cssMDB'])) : ?>
-        <nav class="navbar navbar-expand-lg navbar-light bg-info-subtle mb-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-0">
             <div class="container">
             <a class="navbar-brand" href="<?= BASEURL; ?>"><strong>Sistem Informasi Perpustakaan</strong></a>
                 <button

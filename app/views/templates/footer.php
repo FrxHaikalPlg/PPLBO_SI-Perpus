@@ -8,9 +8,9 @@
         </script>
     <?php endif; ?>
 
-    <footer class="footer mt-auto py-3 mt-4 bg-info-subtle mb-0">
+    <footer class="footer mt-auto py-3 mt-4 bg-dark mb-0">
         <div class="container ">
-            <p class="text-center text-body-secondary mb-0">© 2024 Kelompok 2 PPLBO</p>
+            <p class="text-center text-white mb-0">© 2024 Kelompok 2 PPLBO</p>
         </div>    
     </footer>
 </body>
