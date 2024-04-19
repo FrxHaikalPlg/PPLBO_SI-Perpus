@@ -11,6 +11,7 @@
     unset($_SESSION['tipe_pesan']);
     ?>
 <?php endif; ?>
+
 <div class="album py-5 bg-body-tertiary">
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -50,7 +51,7 @@
                       <div class="modal-body">
                           <div class="row">
                               <div class="col-md-5 d-flex justify-content-center align-items-center" style="height: 350px;">
-                                  <img id="sampul" width="200" height="350" src="" alt="foto sampul buku" style="max-height: 100%; margin-bottom: 20px;">
+                                  <img id="sampul" max-width="300" height="350" src="" alt="foto sampul buku" style="max-height: 100%; margin-bottom: 20px;">
                               </div>
                               <div class="col-md-7">
                                   <table class="table table-striped">
@@ -76,7 +77,7 @@
                                               <td id="jumlah">: </td>
                                           </tr>
                                           <tr>
-                                              <td>Pinjam Sampai</td>
+                                              <td class="text-nowrap">Pinjam Sampai</td>
                                               <td id="pinjam" class="d-flex align-items-center">:  <input type="date" required min="" name="tanggal_kembali" class="form-control" style="margin-left: 5px;" <?php if(!isset($_SESSION['user_logged_in'])): ?>disabled<?php endif; ?>></td>
                                           </tr>
                                       </tbody>
@@ -107,3 +108,4 @@
 
 <!-- Javascript -->
 <script src="<?= BASEURL; ?>/js/modalBuku.js"></script>
+

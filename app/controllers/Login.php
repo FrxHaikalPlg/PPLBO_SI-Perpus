@@ -4,9 +4,10 @@ class Login extends Controller {
     public function index() {
         $this->checkGuest();
         $data['judul'] = 'Login';
+        $data['cssMDB'] = true;
         $this->view('templates/header', $data);
         $this->view('login/index');
-        $this->view('templates/footer');
+        $this->view('templates/footer', $data);
     }
 
     public function login(){

@@ -4,9 +4,10 @@ class Register extends Controller {
     public function index() {
         $this->checkGuest();
         $data['judul'] = 'Registrasi';
+        $data['cssMDB'] = true;
         $this->view('templates/header', $data);
         $this->view('register/index');
-        $this->view('templates/footer');
+        $this->view('templates/footer', $data);
     }
 
     public function register() {
