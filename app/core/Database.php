@@ -9,7 +9,7 @@ class Database {
     private $dbh;
     private $stmt;
 
-    public function __construct()
+    public function __construct() 
     {
         $dsn = 'mysql:host='.$this->host.';dbname='.$this->db_name.'';
         
